@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.artist-cards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 100px;
+  column-gap: 100px;
+}
+
+.artist {
+  display: flex;
+  flex-direction: column;
+}
+
+.artist img {
+  width: 300px;
+}
