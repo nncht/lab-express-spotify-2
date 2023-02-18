@@ -31,6 +31,7 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+// Route to artist search
 app.get("/artist-search", (req, res) => {
   spotifyApi
     .searchArtists(req.query.artist)
@@ -42,6 +43,7 @@ app.get("/artist-search", (req, res) => {
     );
 });
 
+// Route to display all artist's albums
 app.get("/albums/:artistId", (req, res) => {
   spotifyApi
     .getArtistAlbums(req.params.artistId)
@@ -50,6 +52,18 @@ app.get("/albums/:artistId", (req, res) => {
     })
     .catch((err) =>
       console.log("The error while searching albums occurred: ", err)
+    );
+});
+
+// Route to display all album's tracks
+app.get("/:albumId/tracks", (req, res) => {
+  spotifyApi
+    .getAlbumTracks(req.params.albumId)
+    .then((data) => {
+      res.render("tracks", { tracks: data.body.items });
+    })
+    .catch((err) =>
+      console.log("The error while searching tracks occurred: ", err)
     );
 });
 
