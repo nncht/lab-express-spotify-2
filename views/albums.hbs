@@ -3,9 +3,12 @@
   {{#each albums}}
 
     <div class="album">
-      <img src="{{this.images.0.url}}" alt="Album Cover" />
+      <div
+        class="album-cover"
+        style="background-image: url({{this.images.0.url}})"
+      ></div>
       <h2>{{this.name}}</h2>
-      <a href="/{{this.id}}/tracks"><button>View Tracks</button></a>
+      <a href="/{{this.id}}/tracks"><button class="button">View Tracks</button></a>
     </div>
 
   {{/each}}
