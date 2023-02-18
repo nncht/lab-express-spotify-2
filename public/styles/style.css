@@ -2,18 +2,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.artist-cards {
+.artist-cards,
+.album-cards {
   display: flex;
   flex-wrap: wrap;
   row-gap: 100px;
   column-gap: 100px;
 }
 
-.artist {
+.artist,
+.album {
   display: flex;
   flex-direction: column;
 }
 
-.artist img {
+.artist,
+.album img {
   width: 300px;
 }
