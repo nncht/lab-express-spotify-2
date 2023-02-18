@@ -16,6 +16,12 @@ h2 {
   text-align: center;
 }
 
+h4 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
 .background {
   width: 100vw;
   height: 100vh;
@@ -100,4 +106,47 @@ form {
   background-color: rgb(85, 85, 85);
   padding: 0px 0px 20px;
   margin: 30px;
+}
+
+thead {
+  background-color: rgb(85, 85, 85);
+  padding: 10px;
+  height: 67;
+}
+
+table {
+  width: 50vw;
+  padding: 10px;
+}
+
+tbody {
+  background-color: rgb(227, 227, 227);
+  padding: 10px;
+}
+
+th {
+  padding: 20 0 0 0;
+}
+
+.tracks-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.audio-controls {
+  width: 400px;
+}
+
+.track-title {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.track-controls {
+  padding: 10px;
+  align-items: center;
+  text-align: center;
 }
